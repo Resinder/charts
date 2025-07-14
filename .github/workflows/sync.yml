@@ -20,7 +20,7 @@ jobs:
               await github.request('POST /repos/{owner}/{repo}/merge-upstream', {
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                branch: 'main'
+                branch: 'master'
               })
               console.log('Sync successful!')
             } catch (error) {
